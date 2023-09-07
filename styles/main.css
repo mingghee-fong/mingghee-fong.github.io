@@ -1,0 +1,295 @@
+body {
+  background-color: #fff2d7;
+  background-size: 100%;
+  color: #383636;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  max-height: 100vh;
+}
+
+/*navigation bar, top section*/
+
+nav {
+  background-color: #ffebb2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  border-color: black;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 20px 0px gray;
+  margin: 15px 15px 15px 15px;
+}
+
+.navbar-name {
+  font-family: 'Rubik Vinyl', sans-serif;
+  font-size: 40px;
+  color: #383636;
+  text-shadow: 0px 5px 10px gray;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav li {
+  margin-right: 15px;
+  text-shadow: 0px 5px 10px gray;
+  font-size: 22px;
+  font-family: 'Titan One', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li a {
+  color: #2b2828;
+  margin-left: 30px;
+}
+
+/*Intro and middle section*/
+
+section {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+section h1 {
+  font-size: 50px;
+  font-family: cursive, sans-serif;
+}
+
+section p {
+  font-size: 25px;
+  font-family: monospace, sans-serif;
+  font-style: oblique;
+}
+
+#hatching-egg {
+  border-radius: 5%;
+  border-style: dotted;
+  margin: 50px 50px 50px 50px;
+  height: auto;
+  margin: auto;
+  max-width: 75%;
+}
+
+section h3 {
+  font-size: 40px;
+  font-family: cursive;
+  margin: 50px 50px 50px 50px;
+}
+
+/*Footer section*/
+
+footer {
+  background-color: #ca970c;
+  color: rgb(0, 0, 0);
+  border-top-style: solid;
+  width: 100%;
+  position: static;
+  bottom: 0;
+  margin-bottom: 0;
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+footer h2 {
+  text-align: center;
+  font-family: monospace, sans-serif;
+  padding-top: 20px;
+}
+
+#back-to-top {
+  font-family: monospace, sans-serif;
+  font-size: larger;
+  color: #2b2828;
+  border-style: solid;
+  background-color: rgb(236, 206, 184);
+  border-radius: 5px;
+  box-shadow: 15px 15px 15px #383636;
+  padding: 3px;
+}
+
+/* Media query for Smartphone */
+@media screen and (max-width: 480px) {
+  .navbar-name h3 {
+    font-size: 30px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .navbar-nav li {
+    display: block;
+    font-size: 15px;
+    padding: 10px 0px 10px 10px;
+    text-decoration: underline;
+  }
+
+  .navbar-nav li {
+    margin-right: 5px;
+  }
+
+  section h1 {
+    font-size: 32px;
+    padding-top: 30px;
+  }
+
+  section h3 {
+    padding-bottom: 0px;
+  }
+
+  #intro p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  footer {
+    margin-top: 100px;
+  }
+
+  footer h2 {
+    font-size: 18px;
+  }
+}
+
+/* Media query for tablet */
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+  .navbar-name h3 {
+    font-size: 40px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .navbar-nav li {
+    display: block;
+    font-size: 20px;
+    padding: 10px 0px 10px 10px;
+    text-decoration: overline;
+  }
+
+  .navbar-nav li {
+    margin-right: 5px;
+  }
+
+  section h1 {
+    font-size: 32px;
+    padding-top: 30px;
+  }
+
+  section h3 {
+    padding-bottom: 0px;
+  }
+
+  #intro p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  footer {
+    margin-top: 100px;
+  }
+
+  footer h2 {
+    font-size: 25px;
+  }
+}
+
+/*Te Houtaewa Blog Page*/
+
+#te-houtaewa-blog h1 {
+  font-family: 'Rubik Vinyl', sans-serif;
+  font-size: 70px;
+  padding: 40px 40px 40px 40px;
+  color: white;
+  background-color: peachpuff;
+  text-align: center;
+  margin: 0;
+  border-color: black;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 5px;
+  box-shadow: 0px 0px 30px 0px #2b2828;
+  text-shadow: 0px 5px 10px rgb(94, 91, 91);
+}
+
+#te-houtaewa-blog h2 {
+  padding: 5%;
+  text-align: center;
+  font-family: cursive, sans-serif;
+  font-size: 30px;
+}
+
+#te-houtaewa-blog h3 {
+  font-family: monospace, sans-serif;
+  font-size: 25px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+#te-houtaewa-blog p {
+  font-family: monospace, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+/*Media query for Te Houtaewa on tablet*/
+
+@media screen and (max-width: 768px) {
+  #te-houtaewa-blog h1 {
+    font-size: 40px;
+    padding: 20px;
+  }
+
+  #te-houtaewa-blog h2 {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  #te-houtaewa-blog h3 {
+    font-size: 20px;
+  }
+
+  #te-houtaewa-blog p {
+    font-size: 16px;
+  }
+}
+
+/*Media query for Te Houtaewa on mobile*/
+
+@media screen and (max-width: 480px) {
+  #te-houtaewa-blog h1 {
+    font-size: 32px;
+    padding: 15px;
+  }
+
+  #te-houtaewa-blog h2 {
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  #te-houtaewa-blog h3 {
+    font-size: 18px;
+  }
+
+  #te-houtaewa-blog p {
+    font-size: 14px;
+  }
+}
