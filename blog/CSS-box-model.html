@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik+Vinyl"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik+Spray+Paint"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Titan+One"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <title>CSS-Box-Model</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar-logo">
+        <a href="index.html" class="navbar-name">
+          <h3>Ming's<br />Dev Blog</h3>
+        </a>
+      </div>
+      <div>
+        <div>
+          <ul class="navbar-nav">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="../index.html">About Me</a>
+            </li>
+            <li>
+              <a href="blog/te-houtaewa-template.html" target="_blank"
+                >Te Houtaewa</a
+              >
+            </li>
+            <li>
+              <a href="index.html">Reflections</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="te-houtaewa-blog">
+      <h1>
+        CSS Box Model
+        <br />
+        Technical Blog
+      </h1>
+      <h2>
+        Let's Talk About
+        <em>CSS Box Model !</em>
+        <br />
+        <br />What is the difference between Margin, Border, and Padding?
+      </h2>
+      <h3>Before we start, we shall identify:</h3>
+
+      <p>
+        -Margin = Plain wall, where you hang your painting.
+        <br />
+        -Border = Painting Frame also known as the Box, where you frame up your
+        painting.
+        <br />
+        -Padding = Mount border/matte, a space between the picture and the
+        frame.
+      </p>
+      <br />
+
+      <h3>Scenario for Margin:</h3>
+
+      <p>
+        Let say, you've just moved in to your new house. In your living room,
+        there is a plain wall where you want to hang your painting. By default,
+        your painting would sit on the top left of the wall.
+        <br />
+        So, how do you determine where your painting goes on the wall?
+        <br />
+        You will be using "margin: ;" to add space outside of your box/painting.
+      </p>
+      <br />
+
+      <p>
+        <span><strong>FOR EXAMPLES:</strong></span>
+        <br />"margin: 50px;" would add a space of 50px all around the box.
+        <br />*Note: margin 50px or represents clockwise manner of margin:
+        50px(top) 50px(right) 50px(bottom) 50px(left); If your box/painting
+        appears on the top left of the wall, you will see that the box/painting
+        moves slightly downwards and to the right but nothing happens to the
+        right or bottom. This is because the code that we have just written
+        creates an invisible 50px barrier all around the object.
+      </p>
+      <br />
+      <p>
+        The other method that you can apply is using the code below:
+        <br />
+        margin-top: 50px;
+        <br />margin-right: 50px; <br />margin-bottom: 50px; <br />margin-left:
+        50px;
+        <br />
+        <br />This will give the same function as what was given above. However,
+        you can manipulate on each of the code by changing the px value to
+        determine where you want your painting to appear on the wall.
+      </p>
+      <br />
+      <p>
+        What if I have two paintings sitting next to each other and using of
+        margin: 50px; on each of them?
+        <br />
+        With this case, the two paintings will have a 50px space on the left of
+        painting 1, 100px space in between painting 1 & 2 and 50px on the right
+        of painting 2.
+        <br />
+        <br />
+        What if I want to have only 50px between them?
+        <br />
+        Well, you can do it by setting the right margin of first painting to
+        50px and the left margin of second painting to 0px OR by setting the
+        right margin of the first painting to 0px and the left margin of second
+        painting to 50px.
+      </p>
+      <br />
+      <br />
+      <h3>Scenario for Border:</h3>
+
+      <p>
+        Hmmm. Border, border, border...
+        <br />
+        Alright, think of it as the frame of your photograph, painting or
+        picture. It is the barrier/wall in between margin and padding. It comes
+        in different size, style and colour right?
+        <br />
+        All to achieve a better visual appearance. For border style, there are
+        various CSS properties that you can use.
+      </p>
+      <br />
+      <p>
+        <span><strong>FOR EXAMPLES:</strong></span>
+        <br />
+        1. border-width : It determine the thickness of your border/frame.
+        <br />
+        2. border-style : Specifies the style of the border/frame. (e.g, solid,
+        dashed or dotted)
+        <br />
+        3. border-colour : You can change the colour of your border.
+        <br />
+        4. border-radius : Rounding up the pointy corners of your box/frame.
+      </p>
+      <br />
+      <p>
+        Well, the same clockwise pattern applies to the value rules for 1, 2 and
+        3.
+        <br />
+        However, with radius is a bit different. Because of the pointy corners
+        do not lie exactly at top, right, bottom and left position, they have a
+        different specification.
+        <br />
+        <br />
+        What does that means?
+        <br />
+        Clockwise rule for radius properties start from the top-left corner,
+        top-right corner, bottom-right corner and lastly bottom-left corner.
+      </p>
+      <br />
+      <p>
+        So if you are to use "border-radius: 10px 20px 30px 40px;", it means:
+        <br />border-top-left-radius: 10px, <br />border-top-right-radius: 20px,
+        <br />border-bottom-right-radius: 30px, <br />border-bottom-left-radius:
+        40px,
+      </p>
+      <br />
+
+      <h3>Scenario for Padding:</h3>
+
+      <p>
+        Lastly, paddding.
+        <br />
+        <br />We have talked about margin which is the spacing element that is
+        happening OUTSIDE the frame. <br />Padding is similar to margin,
+        however, it is the spacing element that is happening INSIDE the frame.
+        <br />Now, we are talking about the actual content of the painting. To
+        make it more appealing to the eyes, often we will see artist make a
+        mount border/matte in between the frame and the content. <br />In this
+        case, it is padding for CSS.
+      </p>
+      <br />
+      <p>
+        <span><strong>FOR EXAMPLES:</strong></span>
+        <br />That's right, the clockwise rule AGAIN! <br />"padding: 50px;"
+        represents "padding: 50x 50px 50px 50px;".
+        <br />
+        <br />Which is also, <br />padding-top: 50px; <br />padding-right: 50px;
+        <br />padding-bottom: 50px; <br />padding-left: 50px;
+      </p>
+      <br />
+      <p>
+        What do they do? Yup, you know it.
+        <br />
+        <br />Creating a 50px spacing in between the frame and the content.
+        <br />You can change the value accordingly and your content will shift
+        around inside the frame or your border. <br />The shape changes too.
+      </p>
+      <br />
+      <br />
+      <h2>
+        There we go! I hope this blog helps you to understand the differences
+        between Margin, Border & Padding and how to use them. Thank you for
+        reading!
+      </h2>
+    </div>
+    <footer>
+      <h2>Copyright &copy; 2023 MingGhee Fong</h2>
+      <a href="#" id="back-to-top">back to top</a>
+    </footer>
+  </body>
+</html>
