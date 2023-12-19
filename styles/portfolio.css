@@ -163,7 +163,7 @@ header {
 /* Projects */
 
 video {
-  width: 40em;
+  width: 80%;
   height: auto;
   border-style: solid;
   border-radius: 1em;
@@ -355,7 +355,7 @@ video {
   }
 
   p {
-    font-size: medium;
+    font-size: x-small;
     margin: 50px;
   }
 
